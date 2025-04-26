@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main() {
-    // Definição das variáveis para armazenar os dados das cartas
+    // Coloquei as variáveis para armazenar os dados das cartas
     char estado1, estado2;
     char codigo1[5], codigo2[5];
     char cidade1[50], cidade2[50];
@@ -13,13 +13,13 @@ int main() {
     // Solicitação dos dados para a Carta 1
     printf("Digite os dados da Carta 1:\n");
     printf("Estado (A-H): ");
-    scanf(" %c", &estado1);  // O espaço antes de %c é para consumir qualquer caractere de nova linha pendente
-    getchar();  // Limpar o buffer (consome o '\n' deixado por scanf)
+    scanf(" %c", &estado1);  
+    getchar();  // Limpar o buffer 
     printf("Código da Carta (ex: A01): ");
     scanf("%s", codigo1);
     getchar();  // Limpar o buffer
     printf("Nome da Cidade: ");
-    scanf(" %s", cidade1);  // Permite ler espaços no nome da cidade
+    scanf(" %s", cidade1);  
     printf("População: ");
     scanf("%d", &populacao1);
     getchar();  // Limpar o buffer
@@ -36,13 +36,13 @@ int main() {
     // Solicitação dos dados para a Carta 2
     printf("\nDigite os dados da Carta 2:\n");
     printf("Estado (A-H): ");
-    scanf(" %c", &estado2);  // O espaço antes de %c é para consumir qualquer caractere de nova linha pendente
+    scanf(" %c", &estado2);  
     getchar();  // Limpar o buffer
     printf("Código da Carta (ex: B03): ");
     scanf("%s", codigo2);
     getchar();  // Limpar o buffer
     printf("Nome da Cidade: ");
-    scanf(" %s", cidade2);  // Permite ler espaços no nome da cidade
+    scanf(" %s", cidade2);  
     printf("População: ");
     scanf("%d", &populacao2);
     getchar();  // Limpar o buffer
